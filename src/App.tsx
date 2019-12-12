@@ -1,11 +1,27 @@
 import React from 'react';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import HomePage from './containers/HomePage';
+import NotFoundPage from './containers/NotFoundPage';
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
+        <Route path='/*'>
+          <NotFoundPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

@@ -1,13 +1,10 @@
 import React from 'react';
 
 import Header from '../components/Header/Header';
-import ProductList from '../components/Product/ProductList';
 
-import ProductsMock from '../mocks/ProductsMock';
-
-class HomePage extends React.Component {
+class NotFoundPage extends React.Component {
     public style = {
-        maxWidth: '768px',
+        maxWidth: '1280px',
         margin: '0 auto',
         background: '#f5f5f5'
     }
@@ -15,10 +12,10 @@ class HomePage extends React.Component {
         return (
             <div style={this.style}>
                 <Header />
-                <ProductList products={ProductsMock} />
+                <h1>Eu num achei foi nada...</h1>
             </div>
         );
     }
 }
 
-export default HomePage;
+export default NotFoundPage;
