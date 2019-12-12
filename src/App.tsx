@@ -15,12 +15,8 @@ const App: React.FC = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
-          <HomePage />
-        </Route>
-        <Route path='/product/:product_id'>
-          <ProductPage />
-        </Route>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/product/:product_id' component={ProductPage} />
         <Route path='/*'>
           <Redirect to='/404'/>
           <NotFoundPage />
