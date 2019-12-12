@@ -1,9 +1,23 @@
 import React from 'react';
 
-const ProuctPage: React.FC = () => {
-    return (
-        <h1>ProuctPage</h1>
-    );
+import Header from '../components/Header/Header';
+
+// import ProductsMock from '../mocks/ProductsMock';
+
+class ProductPage extends React.Component {
+    public style = {
+        maxWidth: '768px',
+        margin: '0 auto',
+        background: '#f5f5f5'
+    }
+    render() {
+        return (
+            <div style={this.style}>
+                <Header />
+                <h1>Produtão</h1>
+            </div>
+        );
+    }
 }
 
-export default ProuctPage;
+export default ProductPage;
