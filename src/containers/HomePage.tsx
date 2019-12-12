@@ -9,7 +9,8 @@ class HomePage extends React.Component {
     public style = {
         maxWidth: '768px',
         margin: '0 auto',
-        background: '#f5f5f5'
+        background: '#f5f5f5',
+        padding: '0px 15px',
     }
     render() {
         return (

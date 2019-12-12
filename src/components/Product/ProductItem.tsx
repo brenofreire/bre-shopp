@@ -12,7 +12,7 @@ const ProductItem: React.FC<IProps> = props => {
     return (
         <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: '#333'}}>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                <div style={{ background: '#fff', minWidth: '200px', flex: '1 1 200px' }}>
+                <div style={{ background: 'transparent', minWidth: '200px', flex: '1 1 200px' }}>
                     <img src="https://picsum.photos/200" alt="Lorem pic" />
                 </div>
                 <div style={{ flex: '3 1 calc(768px - 300px)', fill: 'fill'}}>
