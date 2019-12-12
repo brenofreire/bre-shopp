@@ -21,7 +21,7 @@ const Header: React.FC = props => {
     `;
 
     const rendersBackBuck = () => {
-        if (window.location.pathname != '/') {
+        if (window.location.pathname !== '/') {
             return <StyledLink to='/'>← Voltar</StyledLink>
         } else {
             return null;
