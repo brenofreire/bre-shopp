@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 interface IProps {
@@ -9,6 +9,12 @@ interface IProps {
 // do not mind the inline css please
 const ProductItem: React.FC<IProps> = props => {
     const { product } = props;
+    useEffect(() => {
+        console.log('Item montado');
+        return () => {
+            console.log('Item desmontado');            
+        }
+    }, []);
     return (
         <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: '#333'}}>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
